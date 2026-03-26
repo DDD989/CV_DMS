@@ -1,81 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Diana</title>
+    <meta charset="UTF-8" />
+    <title>Portafolio Colaborativo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
-<div class="wrapper">
+<body class="home">
+    <header>
+        <h1>Portafolio Colaborativo</h1>
+        <p>Tecnologías Computacionales I</p>
+    </header>
 
-    <aside class="sidebar">
-        <img src="img/dibg.jpeg" alt="Foto de perfil" class="profile-pic">
+    <main class="container">
 
-        <h1>Diana</h1>
-        <p class="role">Ingeniería en Computación</p>
-
-        <div class="contact">
-            <p>📍 San Mateo Otzacatipan, Toluca, Mexico</p>
-            <p>📧 diana.dibg299@gmail.com</p>
-            <p>📱 722 771 5790</p>
-        </div>
-
-        <div class="skills">
-            <h3>Habilidades</h3>
-            <div class="skill">Java</div>
-            <div class="skill">Python</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">PostgreSQL</div>
-            <div class="skill">Mantenimiento de computadoras</div>
-            <div class="skill">Gestión de proyectos</div>
-        </div>
-    </aside>
-
-    <main class="content">
-
-        <section class="card">
-            <h2>Perfil Profesional</h2>
-            <p>
-                Estudiante de Ingeniería en Computación con habilidades en programación, bases de datos 
-                y soporte tecnico de computadoras. 
-                Destaco por mi organización, creatividad y trabajo en equipo.
-            </p>
+        <section class="controls">
+            <label for="sort">Ordenar por:</label>
+            <select id="sort">
+                <option value="az">Nombre (A-Z)</option>
+                <option value="za">Nombre (Z-A)</option>
+            </select>
         </section>
 
-        <section class="card">
-            <h2>Educación</h2>
-            <ul>
-                <li>Ingeniería en Computación - UAEMex(2022-Actualidad)</li>
-            </ul>
-        </section>
+        <section class="members">
+            <h2>Integrantes</h2>
+            <div class="grid" id="cards-container">
 
-        <section class="card">
-            <h2>Certificaciones</h2>
-            <ul>
-                <li>Técnico en Redes – capacitateparaelempleo.org</li>
-            </ul>
-        </section>
+                <div class="card-index" data-name="Diego Miguel Segundo">
+                    <a href="cv/dms/">
+                        <img src="img/dms.jpeg" alt="Diego Miguel Segundo">
+                        <h3>Diego Miguel Segundo</h3>
+                    </a>
+                </div>
 
-        <section class="card">
-            <h2>Proyecto</h2>
-            <p><strong>Punto de Venta para una Merceria</strong></p>
-        </section>
+                <div class="card-index" data-name="Diana Ivon Benitez Gonzalez">
+                    <a href="cv/dibg/">
+                        <img src="img/dibg.jpeg" alt="Diana Ivon Benitez Gonzalez">
+                        <h3>Diana Ivon Benitez Gonzalez</h3>
+                    </a>
+                </div>
 
-        <section class="card">
-            <h2>Idiomas</h2>
-            <p>Español (Nativo)</p>
-        </section>
+                <div class="card-index" data-name="Jessica Mijal Lopez De Jesus">
+                    <a href="cv/Mijal/">
+                        <img src="img/Mijal.jpeg" alt="Jessica Mijal Lopez De Jesus">
+                        <h3>Jessica Mijal Lopez De Jesus</h3>
+                    </a>
+                </div>
 
-        <section class="card">
-            <h2>Links</h2>
-            <a href="https://github.com/DDD989" target="_blank" class="btn">GitHub</a>
+            </div>
         </section>
 
     </main>
 
-</div>
+    <footer>
+        <p>Universidad Autónoma del Estado de México</p>
+    </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
